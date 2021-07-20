@@ -1,0 +1,186 @@
+*{
+    margin:auto;
+    padding:0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ /* seccion de color y letra */
+body
+{
+    background:#5497A7;
+    font-family:'Viaoda Libre', cursive;
+}
+.title
+{
+	width: 100%;
+	background: #ffb894;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section h1
+{
+    font-size: 50px;
+}
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px;
+    margin-top: 50px;
+}
+/* --------------ESTILOS DE MENU---------------------*/
+.lbl-menu
+{
+	display: flex;
+	flex-wrap: wrap;
+    background: #234;
+}
+.lbl-menu label
+{
+    display: inline-block;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.lbl-menu label:hover
+{
+    background: #7bdba6;
+}
+.content
+{
+    position: relative;
+}
+.content div
+{
+    position:absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    padding-bottom: 40px;
+}
+#radio,radio2,radio3,radio4
+{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2 ~ .tabla,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.content div::after
+{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    bottom: 100%;
+    left: 28px;
+}
+.content .tab2:after
+{
+    left: 122px;
+}
+.content .tab3:after
+{
+    left: 210px;
+}
+.content .tab4:after
+{
+    left: 303px;
+}
+/* ----------------------TERMINAN LOS ESTILOS DE MENU----------------------*/
+
+
+/* ----------------------ESTILOS DE TABLA-----------------------------*/
+table
+{
+    background-color: #E57373;
+    text-align: center;
+    border-collapse: collapse;
+}
+table, td, th 
+{
+    padding: 20px 20px;
+  border: 2px solid rgb(0, 0, 0);
+}
+TR .h1
+{
+    COLOR:ORANGE;
+}
+th
+{
+    background-color: #ffcdd2;
+    color: rgb(0, 0, 0);
+}
+tr:hover
+{
+    background-color: #FFEBEE;
+}
+/* ----------------------TERMINAN ESTILOS DE TABLA-----------------------------*/
+
+/* ------------ESTILOS DE INICIO-------------------*/
+
+section .posts
+{
+    width: auto;
+    padding: 50px;
+}
+footer
+{
+    width: 100%;  
+    overflow: hidden;
+    background:#000;
+    color:#fff;
+    padding: 15px 0;
+    text-align: center;
+}
+.text-titulo
+{
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+ .main
+ {
+    /* width: 700px;*/
+    width: 100%;
+     background-color: #ffdcc8;
+     float:left;
+ }
+ .content .tab1
+ {
+    /* 1) quitar y poner porcentaje width: 1000px;*/
+    width: 100%;
+    max-width: 1000px; /*también se limitan las medidas */
+    margin: 20px auto;
+    background: rgb(136, 253, 243);
+}
+.main .imagen
+{
+    align-self:auto;
+}
+.content
+{
+    width: 100%;
+}
+
+/* -------------TERMINAN ESTILOS-----------------*/
+.section .formularios
+{
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+}
